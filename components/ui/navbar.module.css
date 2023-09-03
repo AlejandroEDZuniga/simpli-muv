@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  width: 100%;
+}
+.container a {
+  color: #333;
+  text-decoration: none;
+  margin: 20px 100px;
+}
+
+
+.menu {
+  flex-grow: 1;
+  justify-content: center;
+
+}
+
+.linkActive {
+  color: yellow;
+}
+
+.link {
+  color: blue;
+}
+
+.menu a {
+  margin: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu a {
+    margin-right: 10px 0;
+    margin-left: 10px;
+  }
+}

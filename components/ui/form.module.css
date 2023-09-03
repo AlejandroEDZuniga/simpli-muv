@@ -1,0 +1,96 @@
+
+.containerForm {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .field,
+  .fieldName {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field label,
+  .fieldName label {
+    margin-bottom: 5px;
+  }
+  
+  .field input,
+  .fieldName input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .field span {
+    color: red;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #903df7;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button:hover {
+    background-color: #7028c4;
+  }
+  .button:active {
+    background-color: #793ebd;
+  }
+  .field input:focus {
+    border-color: #793ebd;
+    outline: none; 
+  }
+  .fieldName input:focus {
+    border-color: #793ebd;
+    outline: none; 
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .containerForm {
+      width: 60%;
+      margin: 0 auto;
+    }
+  
+    .row {
+      flex-direction: row;
+    }
+  
+    .fieldName {
+      width: 48%;
+    }
+  
+    .field {
+      width: 100%;
+    }
+  
+    .button {
+      width: 80%;
+    }
+  }
+  

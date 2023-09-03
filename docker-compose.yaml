@@ -1,0 +1,8 @@
+services:
+  productsdb:
+    image: mongo:5.0.0
+    container_name: products-database
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo:/data/db

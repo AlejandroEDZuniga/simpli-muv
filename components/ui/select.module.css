@@ -1,0 +1,10 @@
+.selectContainer {
+    display: flex;
+    margin: 10px 0;
+    border-radius: 3%;
+    border-color: grey;
+}
+
+.select {
+    padding: 10px;
+}

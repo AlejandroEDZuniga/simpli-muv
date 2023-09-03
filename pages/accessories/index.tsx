@@ -1,18 +1,18 @@
-import React from "react";
+import React, { FC } from "react";
 import Layout from "@/components/layout/Layout";
 import ItemList from "@/components/ui/ItemList";
 import { Products } from "@/interfaces";
-import { dbEntries } from "@/database";
 import { GetServerSideProps } from "next";
+import { dbEntries } from "@/database";
 
-interface HomeProps {
+interface AccessoriesProps {
   items: Products[];
-  itemType: "motorcycle" | "accessory";
+  itemType: "accessory" | "motorcycle";
 }
 
-const Home: React.FC<HomeProps> = ({ items, itemType }) => {
+const Accessories: FC<AccessoriesProps> = ({ items, itemType }) => {
   return (
-    <Layout title="Home">
+    <Layout title="Accessories">
       <ItemList items={items} itemType={itemType} />
     </Layout>
   );
@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = ({ items, itemType }) => {
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const page = parseInt(query.page as string, 12) || 1;
-  const items = await dbEntries.getProducts(page);
+  const items = await dbEntries.getAccesories(page);
 
   if (!items) {
     return {
@@ -31,8 +31,8 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     };
   }
   return {
-    props: { items, itemType: "motorcycle" },
+    props: { items, itemType: "accessory" },
   };
 };
 
-export default Home;
+export default Accessories;

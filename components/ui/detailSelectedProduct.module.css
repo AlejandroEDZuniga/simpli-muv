@@ -1,0 +1,127 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+
+.left,
+.right {
+  padding: 20px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 3%;
+  width: 100%;
+}
+
+.button.purple {
+  background-color: #903df7;
+}
+
+.button.black {
+  background-color: #373434;
+}
+
+.description {
+  border-top: 1px solid #dcd9d9;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.button.fullWidth {
+  background-color: #903df7;
+}
+
+.button.getQuote {
+  margin-top: 50px;
+  padding-left: 20px;
+  background-color: #903df7;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 769px) {
+  .container {
+    display: flex;
+  }
+
+  .left {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .right {
+    width: 30%;
+  }
+
+  .buttonContainer {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .button {
+    width: 38%;
+  }
+
+  .button.fullWidth,
+  .button.getQuote {
+    width: 50%;
+  }
+
+  .row {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

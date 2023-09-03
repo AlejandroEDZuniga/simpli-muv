@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #03072c;
+    color: rgb(71, 122, 156);
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 20px;
+}
+.column1 {
+    flex: 1;
+    margin: 0 20px;
+    color: white
+}
+
+.middleColumn {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.middleColumn h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.middleColumn ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.middleColumn ul li {
+    margin: 5px 0;
+}
+
