@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect } from "react";
 import Card from "./Card";
-import styles from "./ItemList.module.css";
+import styles from "./itemList.module.css";
 import { Products } from "../../interfaces/products";
 import Select from "./Select";
 
