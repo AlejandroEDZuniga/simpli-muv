@@ -1,12 +1,5 @@
 import mongoose from "mongoose";
 
-/**
- * 0= disconnected
- * 1= connected
- * 2 = connecting
- * 3= disconnecting
- */
-
 const mongoConnection = {
   isConnected: 0,
 };
@@ -32,7 +25,7 @@ export const connect = async () => {
 };
 
 export const disconnect = async () => {
-  if (process.env.NODE_ENV === "development") return; //para que no se desconecte al pedo en development
+  if (process.env.NODE_ENV === "development") return;
   if (mongoConnection.isConnected === 0) return;
 
   await mongoose.disconnect();
