@@ -3,7 +3,7 @@ import ThankYou from "@/components/ui/ThankYou";
 import { useRouter } from "next/router";
 import Layout from "@/components/layout/Layout";
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
   return (
     <Layout title="Thank you">
@@ -12,4 +12,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

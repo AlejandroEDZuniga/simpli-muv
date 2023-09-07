@@ -36,3 +36,5 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 };
 
 export default Home;
+
+
